@@ -25,7 +25,7 @@ const Login = (props) => {
       .then(result => {
         console.log(result.data)
         localStorage.setItem("token", result.data.token)
-        props.history.push("/friendslist")
+        props.history.push("/bubble-page")
       })
       .catch(err => {
         setError(err.response.data.message)
